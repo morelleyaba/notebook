@@ -1,0 +1,20 @@
+{% extends 'baseSeconde.html.twig' %}
+
+{% block title %}Creation d'un nouveau carnet d'adresse{% endblock %} 
+
+{% block body %}
+
+
+<div class="container">
+    <h1>Creer un carnet d'adresse</h1>
+
+    {{form_start(formulaire)}}
+
+    {{form_widget(formulaire)}}
+
+    <button type="submit" class="btn btn-primary mt-4">Enregistrer </button>
+
+
+    {{form_end(formulaire)}}
+</div>
+{% endblock %}

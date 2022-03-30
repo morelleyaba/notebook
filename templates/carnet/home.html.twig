@@ -1,0 +1,12 @@
+{% extends 'baseSeconde.html.twig' %}
+{% block title %}
+Acceuil
+{% endblock %}
+{% block body %}
+    <h3 class="m-4">Bienvenu sur notre site de recherche</h3>
+{{ 
+                render(
+                    controller('App\\Controller\\CarnetController::searchBar')
+                )
+}}
+{% endblock %}

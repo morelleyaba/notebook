@@ -18,12 +18,6 @@
     {# pour inclure un fichier de l'entete #}
     {% include 'partials/header.html.twig' %}
     {% block header %} {% endblock %}
-    
-            {{ 
-                render(
-                    controller('App\\Controller\\CarnetController::searchBar')
-                )
-            }}
         <div class="container">
             {% block body %}{% endblock %}
         </div>
